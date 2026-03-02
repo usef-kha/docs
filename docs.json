@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
+  "theme": "luma",
   "name": "Fiverse Help Center",
   "logo": {
     "dark": "/logo/fiverse-dark.svg",
