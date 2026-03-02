@@ -1,55 +1,43 @@
-# Mintlify Starter Kit
+# Fiverse Help Center — Mintlify
 
-Use the starter kit to get your docs deployed and ready to customize.
+Ready-to-deploy Mintlify project. 10 MDX articles, full `docs.json` navigation config.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## Deploy in 5 minutes
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
+### 1. Push to GitHub
 ```bash
-npx skills add https://mintlify.com/docs
+git init
+git add .
+git commit -m "feat: initial help center content"
+git remote add origin https://github.com/YOUR_ORG/fiverse-helpcenter.git
+git push -u origin main
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+### 2. Connect on Mintlify
+1. Go to [dashboard.mintlify.com](https://dashboard.mintlify.com)
+2. Click **New Project** → **Import from GitHub**
+3. Select `fiverse-helpcenter`
+4. Set your custom domain (e.g. `help.fiverse.io`) under **Settings → Domain**
+5. Click **Deploy** — live in ~60 seconds.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
+## File structure
 ```
-npm i -g mint
+fiverse-helpcenter/
+├── docs.json                        ← navigation, branding, colors
+├── help/
+│   ├── linking-accounts.mdx         Article 1a
+│   ├── first-sync.mdx               Article 1b
+│   ├── smart-budgets.mdx            Article 2a
+│   ├── spending-trends.mdx          Article 2b
+│   ├── subscription-manager.mdx     Article 2c
+│   ├── setting-goals.mdx            Article 3a
+│   ├── ai-suggestions.mdx           Article 3b
+│   ├── automated-savings.mdx        Article 3c
+│   ├── ai-insights.mdx              Article 4a
+│   └── total-balance.mdx            Article 4b
+└── logo/                            ← add fiverse-light.svg + fiverse-dark.svg
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+## Add your logo
+Drop `fiverse-light.svg` and `fiverse-dark.svg` into the `/logo/` folder.
+Update the paths in `docs.json` if needed.

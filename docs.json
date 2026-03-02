@@ -1,122 +1,68 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Fiverse Help Center",
+  "logo": {
+    "dark": "/logo/fiverse-dark.svg",
+    "light": "/logo/fiverse-light.svg"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
+  "colors": {
+    "primary": "#3B6FE8",
+    "light": "#5B8EF0",
+    "dark": "#1E2A4A",
+    "anchors": {
+      "from": "#3B6FE8",
+      "to": "#5B8EF0"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "fiverse.io",
+      "url": "https://www.fiverse.io"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get the App",
+    "url": "https://www.fiverse.io"
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "help/linking-accounts",
+        "help/first-sync"
+      ]
+    },
+    {
+      "group": "Mastering Your Budget",
+      "pages": [
+        "help/smart-budgets",
+        "help/spending-trends",
+        "help/subscription-manager"
+      ]
+    },
+    {
+      "group": "Achieving Goals",
+      "pages": [
+        "help/setting-goals",
+        "help/ai-suggestions",
+        "help/automated-savings"
+      ]
+    },
+    {
+      "group": "Your Dashboard",
+      "pages": [
+        "help/ai-insights",
+        "help/total-balance"
       ]
     }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/fiverseio",
+    "linkedin": "https://linkedin.com/company/fiverseio"
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": false
   }
 }
